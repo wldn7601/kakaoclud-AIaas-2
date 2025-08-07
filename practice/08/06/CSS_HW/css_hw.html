@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW</title>
+    <link rel="stylesheet" href="./css_hw_styles.css">
+</head>
+<body>
+    <!-- header 배경사진 및 회원가입 글자 -->
+    <header>
+        <div class="container-image">
+            <div class="content-text">
+               <h1>회원가입</h1>
+            </div>
+        </div>
+        <!-- <nav>
+            <ul>
+                <li><a href="">로그인</a></li>
+                <li><a href="">도움말</a></li>
+                <li><a href="">약관</a></li>
+            </ul>
+        </nav> -->
+
+    </header>
+    <!-- header -->
+     <!-- main  -->
+    <main>
+        <div class="box">
+            <!-- 로그인, 도움말, 약관 -->
+            <div class="left">
+                <ul>
+                    <li><a href="">로그인</a></li>
+                    <li><a href="">도움말</a></li>
+                    <li><a href="">약관</a></li>
+                </ul>
+            </div>
+            <!-- 로그인, 도움말, 약관 -->
+            <!-- 회원가입 폼 -->
+            <div class="right">
+                <form action="/submit-form" class="navbar" method="post">
+                    <div>
+                       <label for="username">이름:</label>
+                    </div>
+                    <div>
+                        <input type="text" name="username" id="username" 
+                        required autofocus>
+                    </div>
+                    <div class="part">
+                        <label for="email">이메일:</label>
+                    </div>
+                    <div>
+                        <input type="email" name="email" id="eamil" 
+                        required placeholder="example@example.com">
+                    </div>
+                    <div class="part">
+                        <label for="password">비밀번호:</label>
+                    </div>
+                    <div>
+                        <input type="password" name="password" id="password" required>
+                    </div>
+                    <div class="part">
+                        <label for="gender">성별:</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="gender" id="male">
+                        <label for="male">남성</label>
+                        <input type="radio" name="gender" id="female">
+                        <label for="female">여성</label>
+                    </div>
+                    <div class="part">
+                        <input type="checkbox" name="accept" id="accept" required>
+                        <label for="accept">약관에 동의합니다.</label>
+                    </div>
+                    <div class="part">
+                        <button type="submit">회원가입</button>
+                    </div>
+                    <!-- <label for="username">이름:</label> -->
+                    <!-- <input type="text" name="username" id="username"> -->
+                </form>
+            </div>
+            <!-- 회원가입 폼 -->
+        </div>
+    </main>
+    <!-- main -->
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!-- footer -->
+    <footer>
+        <div class="footer">
+            <h2>@ 2025 MyWebsite | 연락처 example@example.com</h2>
+        </div>
+    </footer>
+    <!-- footer -->
+</body>
+</html>
