@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            width: 100%;
+        }
+        table, td, th{
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        .bio{
+            height: 150px;
+        }
+        .part{
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <!-- header nav -->
+    <header>
+        <h1>메뉴</h1>
+        <nav>
+            <ul>
+                <li><a href="#sign-in">회원가입</a></li>
+                <li><a href="#profile">프로필 정보</a></li>
+                <li><a href="#question">문의하기</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- header nav -->
+    <hr>
+    <!-- main -->
+    <main>
+        <!-- 회원가입 -->
+        <section id="sign-in">
+            <h2>회원가입</h2>
+            <form action="">
+                <!-- 사용자 이름 -->
+                <div>
+                    <label for="username">사용자 이름:</label>
+                    <input type="text" name="username" id="username"
+                    placeholder="사용자 이름" required autofocus>
+                    
+                </div>
+                <!-- 이메일 -->
+                <div class="part">
+                    <label for="eamil">이메일:</label>
+                    <input type="email" name="email" id="email"
+                    placeholder="example@example.com" required>
+                </div>
+                <!-- 비밀번호 -->
+                <div class="part">
+                    <label for="password">비밀번호:</label>
+                    <input type="password" name="password" id="password"
+                    required>    
+                </div>
+                <!-- 나이 -->
+                <div class="part">
+                    <label for="age">나이:</label>
+                    <input type="number" name="age" id="age"
+                    min="14" required>
+                </div>
+                <!-- 성별 -->
+                <div class="part">
+                    <label for="gender">성별:</label>
+                    <input type="radio" name="gender" id="male">
+                    <label for="male">남성</label>
+                    <input type="radio" name="gender" id="female">
+                    <label for="female">여성</label>
+                </div>
+                <!-- 자기소게 -->
+                <div class="part">
+                    <label for="introduce">자기소개:</label>
+                    <textarea name="introduce" id="introduce"
+                    rows="5" cols="50"></textarea>
+                </div>
+                <!-- 좋아하는 취미 -->
+                 <div class="part">
+                    <label for="hobby">좋아하는 취미:</label>
+                    <select name="hobby" id="hobby">
+                        <optgroup>
+                            <option value="soccer">축구</option>
+                            <option value="baseball">야구</option>
+                            <option value="game">게임</option>
+                        </optgroup>
+                    </select>
+                 </div>
+                 <!-- 프로필 사진 업로드 -->
+                <div class="part">
+                    <label for="profile-picture">프로필 사진 업로드:</label>
+                    <input type="file" name="profile-picture" id="profile-picture">
+                </div>
+                <!-- 회원가입, 초기화, 업데이트 진행 상황 -->
+                 <div class="part">
+                    <button type="submit">회원가입</button>
+                    <button type="reset">초기화</button>
+                    <label for="progress">업데이트 진행 상황</label>
+                    <progress></progress>
+                 </div>
+            </form>
+        </section>
+        <!-- 회원가입 -->
+         <hr>
+         <!-- 프로필 정보 -->
+         <section id="profile">
+            <h2>프로필 정보</h2>
+            <table>
+                <caption>프로필 정보 요약</caption>
+                <colgroup>
+                    <col style="width: 30%; background-color: antiquewhite;">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>항목</th>
+                        <th>내용</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>프로필</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>이름</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>이메일</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>나이</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>성별</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="bio">자기소개</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>취미</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="2" 
+                        style="background-color: white;">
+                        프로필 정보가 성공적으로 업데이트되었습니다.
+                    </td>
+                    </tr>
+                </tfoot>
+            </table>
+         </section>
+         <!-- 프로필 정보 -->
+    </main>
+    <!-- main -->
+     <hr>
+     <!-- footer -->
+    <footer id="question">
+        <h2>문의하기</h2>
+        <p>문의: example@example.com</p>
+        <p>전화: 010-1234-5678</p>
+        <p>주소: 마곡 595</p>
+        <p>오시는 길</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3162.8437644913843!2d126.82331267587341!3d37.55874457204062!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c9d1082c1a3ab%3A0x38a8b6f8c19449d6!2z66eI6rOhNTk167mM65Sp!5e0!3m2!1sko!2skr!4v1754547640688!5m2!1sko!2skr" 
+            width="600"
+            height="450" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        <p>Copyright @ 2025 프로필 관리 페이지</p>
+    </footer>
+    <!-- footer -->
+</body>
+</html>
