@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+/* gpt */
+
+/* html 높이가 100%가 아니면 body의 wave-color가 페이지 전부에 적용되지 않는다. */
+html{
+    height: 100%;
+}
+
+/* 배경색을 물결 애니메이션과 배경색이 애니메이션으로 변하는 코드 */
+.wave-color{
+    height: 100%;
+    overflow: hidden;
+    background: linear-gradient(
+      135deg,
+      #00f2fe 0%,
+      #4facfe 25%,
+      #38f9d7 50%,
+      #43e97b 75%,
+      #00f2fe 100%
+    );
+    background-size: 150% 150%;
+    animation: wave-flow 6s ease-in-out infinite;
+}
+@keyframes wave-flow {
+    0% {
+      background-position: 0% 0%;
+    }
+    50% {
+      background-position: 100% 100%;
+    }
+    100% {
+      background-position: 0% 0%;
+    }
+}
+
+/* 타이머의 글자의 색을 바꿈 */
+.timer-wave-color {
+    color: #ffffff;
+    text-shadow:
+      0 0 10px rgba(0, 242, 254, 0.8),
+      0 0 20px rgba(79, 172, 254, 0.7),
+      0 0 30px rgba(56, 249, 215, 0.6);
+    animation: text-wave 3s ease-in-out infinite;
+}
+/* 타이머의 위치를 위 아래로 이동하는 애니메이션 */
+@keyframes text-wave {
+    0%, 100% {
+      filter: drop-shadow(0 0 4px #00f2fe);
+      transform: translateY(30px);
+    }
+    50% {
+      filter: drop-shadow(0 0 12px #1b1f20);
+      transform: translateY(-30px);
+    }
+}
+
+/* gpt의 코드를 참고하면서 작성한 버튼의 글자를 바꾸는 코드 */
+/* .button-text{
+    background-color: #ffffff;
+    overflow: hidden;
+    text-shadow:
+      0 0 10px rgba(0, 242, 254, 0.8),
+      0 0 20px rgba(79, 172, 254, 0.7),
+      0 0 30px rgba(56, 249, 215, 0.6);
+    
+    background: linear-gradient(
+        45deg,
+        #e6e937 0%,
+        #7de42e 25%,
+        #3bdec8 50%,
+        #2381e6 75%,
+        #1db377 100%
+    );
+    background-size: 150% 150%;
+    animation: button-wave 6s ease-in-out infinite;
+}
+@keyframes button-wave{
+    0% {
+      background-position: 0% 0%;
+    }
+    50% {
+      background-position: 100% 100%;
+    }
+    100% {
+      background-position: 0% 0%;
+    }
+} */
+
+.button-text {
+  overflow: hidden;
+  text-shadow:
+    0 0 10px rgba(0, 242, 254, 0.8),
+    0 0 20px rgba(79, 172, 254, 0.7),
+    0 0 30px rgba(56, 249, 215, 0.6);
+  background: linear-gradient(
+      45deg,
+      #e6e937 0%,
+      #7de42e 25%,
+      #3bdec8 50%,
+      #2381e6 75%,
+      #1db377 100%
+  );
+  background-size: 200% 200%;  /* background-size와 background-position 비율 맞추기 */
+  animation: button-wave 3s linear infinite;
+}
+
+@keyframes button-wave {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%; /* 처음 위치와 같게 하여 튐 방지 */
+  }
+}
+
+
+/* gpt */
+#timer{
+    font-size: 100px;
+    margin-top: 50px;
+    text-align: center;
+}
+#container{
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button{
+    margin: 30px;
+    width: 200px;
+    height: 100px;
+    border-radius: 20px;
+    font-size: 35px;
+    background-color:rgb(172, 180, 187);
+
+    transition: background-color 0.4s ease-in-out; /* 색상 전환 부드럽게 */
+    border: none;
+}
+.button:active{
+    background-color: rgb(39, 43, 46);
+}
