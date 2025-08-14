@@ -1,6 +1,6 @@
-function H1({child}){
+const H1 = ({className, text}) =>{
     return (
-        <h1>{child}</h1>
+        <h1 className={className}>{text}</h1>
     );
 }
 

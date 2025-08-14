@@ -1,11 +1,11 @@
 import P from '../Atoms/P';
 
-function MainFooter(){
+const MainFooter = () => {
     return (
         <footer className = "footer">
-            <P child={"footer1"}/>
-            <P child={"footer2"}/>
-            <P child={"footer3"}/>
+            <P text={"footer1"}/>
+            <P text={"footer2"}/>
+            <P text={"footer3"}/>
         </footer>
     );
 }

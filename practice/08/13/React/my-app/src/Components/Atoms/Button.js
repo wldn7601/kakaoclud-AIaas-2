@@ -1,6 +1,6 @@
-function Button({buttonHandler, child}){
+const Button = ({className, clickHandle, text}) =>{
     return(
-        <button onClick = {buttonHandler} className = "test-button text-font text-color">{child}</button>
+        <button onClick = {clickHandle} className = {className}>{text}</button>
     );
 }
 

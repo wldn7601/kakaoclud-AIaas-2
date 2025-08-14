@@ -1,6 +1,6 @@
-function P({child}){
+const P = ({text}) => {
     return(
-        <p className = "text-font text-color margin">{child}</p>
+        <p className = "text-font text-color margin">{text}</p>
     );
 }
 
