@@ -1,0 +1,23 @@
+
+const ListDemo = () => {
+    const arr = [
+        {name: "홍길동1", age: 25},
+        {name: "홍길동2", age: 26},
+        {name: "홍길동3", age: 27},
+    ];
+    
+    return (
+        <ul>
+        {
+            arr.filter((item) => {
+                return item.age > 25;
+            })
+            .map((item, index) => (
+                <li key={item.name + index}>{item}</li>
+            ))
+        }
+        </ul>
+    );
+}
+
+export default ListDemo;
