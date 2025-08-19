@@ -24,11 +24,34 @@ body{
   font-size: 20px;
 }
 .text-color{
-  color: #3a2424;
+  /* color: #3a2424;
   text-shadow:
     0 0 10px rgba(0, 242, 254, 0.8),
     0 0 20px rgba(79, 172, 254, 0.7),
-    0 0 30px rgba(56, 249, 215, 0.6);
+    0 0 30px rgba(56, 249, 215, 0.6); */
+  color: #6a42e1;
+  text-shadow:
+    0 0 10px rgba(79, 59, 70, 0.8),
+    0 0 20px rgba(53, 38, 46, 0.7),
+    0 0 30px rgba(14, 9, 9, 0.6);
+}
+.des-color{
+  /* background-color: #ff0000; */
+  /* background: linear-gradient(to right, #ff0000, #0000ff); 
+  -webkit-background-clip: text;  
+  -webkit-text-fill-color: transparent;  */
+  font-size: 20px;
+  display: inline-block;
+  background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+  background-size: 100% 100%;
+  -webkit-background-clip: text;  
+  -webkit-text-fill-color: transparent; 
+}
+.des-container{
+  text-align: center;
+}
+.des-in-bottom{
+  
 }
 .margin{
   margin: 10px;
@@ -46,17 +69,52 @@ body{
   background-color: white;
 }
 
-.iPhone-background-img{
-  /* background-image: url("https://www.apple.com/kr/iphone/home/images/meta/iphone__kqge21l9n26q_og.png"); */
-  /* width: ; */
-  background-repeat: no-repeat;
-  /* width: 100%; */
-  /* height: 900px; */
-  overflow: hidden;
-  z-index: 999;
+.iPhone-img{
+  background-image: url("https://www.apple.com/kr/iphone/home/images/meta/iphone__kqge21l9n26q_og.png");
+  height: 700px;
+  background-repeat: no-repeat; /* 반복 방지 */
+  background-size: cover;
 }
-.iPhone-section{
-  /* background-color: gray; */
+.MacBook-img{
+  background-image: url("https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/macbook-air-og-202503?wid=1200&hei=630&fmt=jpeg&qlt=95&.v=1739216814915");
+  height: 700px;
+  background-repeat: no-repeat; /* 반복 방지 */
+  background-size: cover;
+}
+.Watch-img{
+  background-image: url("https://www.elle.co.kr/resources/online/online_image/2024/09/26/31e26004-9ed4-4adc-af87-2e74d5061062.jpg");
+  height: 700px;
+  background-repeat: no-repeat; /* 반복 방지 */
+  background-size: cover;
+}
+.half-img-container{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 16px; 
+}
+.half-img{
+  width: 100%;
+  height: 490px;
+  margin-left: 16px;
+  margin-top: 8px;
+
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+
+}
+.half-img-content-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  max-width: 45%;   
+  max-height: 95%;
+}
+.half-img-top-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 /* .logo-button{
   background-color: white;
@@ -73,8 +131,12 @@ body{
 .center{
   text-align: center;
 }
+.title-container{
+  /* max-width: 45%;        */
+  /* text-align: center;    */
+}
 .title{
-  font-size: 4rem;
+  font-size: 3rem;
 }
 .subtitle{
   font-size: 1.5rem;
