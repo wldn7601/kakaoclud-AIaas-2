@@ -60,6 +60,7 @@ body{
   width: 100%;
   position: fixed;
   top: 0;
+  z-index: 999;
 }
 .nav-ul{
   width: 100%;
@@ -157,4 +158,94 @@ body{
   border-radius: 20px;
   width: fit-content;
   height: 40px;
+}
+
+
+/* gpt */
+.img-animation-container {
+  width: 800px;
+  /* height: 400px; */
+  overflow: hidden;    /* 다음 이미지 숨김 */
+  margin: auto;
+  margin-top: 16px;
+  position: relative;
+}
+
+.slider-track {
+  /* height: 400px; */
+  display: flex;
+  transition: transform 1s ease-in-out;
+}
+
+.slide-img {
+  flex: 0 0 100%;      /* 한 장씩 보이도록 */
+}
+
+.slide-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+/* gemini */
+
+.footer-link-groups-container {
+  display: flex; /* 주 컨테이너를 Flexbox로 설정 */
+  justify-content: space-around; /* 열 사이의 공간을 균등하게 배분 */
+  /* width: 100%; */
+  max-width: 80%;
+  margin: 0 auto; /* 좌우 여백을 동일하게 만들어 가운데 정렬 */
+  padding: 20px;
+}
+
+.footer-link-group-container {
+  display: flex;
+  flex-direction: column; /* 열 내부 항목들을 세로로 정렬 */
+  gap: 20px; /* 링크 그룹들 사이의 간격 */
+}
+.footer-link-group {
+  /* 링크 그룹 전체에 대한 스타일 (예: 여백, 폰트 등) */
+  margin-bottom: 20px;
+}
+
+.footer-link-group h4 {
+  /* 제목(h4)에 대한 스타일 */
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer-link-group ul {
+  /* ul 태그에 대한 스타일 */
+  list-style: none; /* 기본 점 제거 */
+}
+
+.footer-link-group li {
+  /* 각 링크 항목(li)에 대한 스타일 */
+  margin-bottom: 5px;
+}
+
+.footer-link-group a {
+  /* 링크(a) 태그에 대한 스타일 */
+  text-decoration: none; /* 밑줄 제거 */
+  color: #555; /* 링크 색상 */
+  font-size: 0.9rem;
+}
+
+.footer-link-group a:hover {
+  /* 마우스 오버 시 스타일 */
+  text-decoration: underline; /* 밑줄 다시 표시 */
+  color:#6a42e1;
+}
+
+/*  */
+
+.footer-description-container p{
+  max-width: 80%;
+  margin: 0 auto;
+}
+.footer-description-link-container{
+  max-width: 80%;
+  margin: 0 auto;
 }

@@ -10,6 +10,7 @@ function App() {
     <>
       <MainHeader userName = "홍길동"/>
       <MainContents/>
+      <hr/>
       <MainFooter/>
     </>
 
